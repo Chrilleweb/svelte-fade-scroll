@@ -1,10 +1,10 @@
-# ✨ svelte-fade-scroll
+# 🌀 svelte-fade-scroll
 
 Fade elements smoothly when they enter the viewport – a simple Svelte/SvelteKit action.
 
 Lightweight, dependency-free, and perfect for modern frontend apps, portfolios, or landing pages where you want beautiful scroll animations without extra libraries.
 
-## ✨ Features
+## 🌫️ Features
 
 - Fade elements in and out based on scroll
 - Full TypeScript support
