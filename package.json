@@ -1,6 +1,9 @@
 {
 	"name": "svelte-fade-scroll",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"author": "Chrilleweb",
+	"description": "A Svelte component for fading elements in and out based on scroll position.",
+	"main": "./dist/index.js",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
@@ -56,11 +59,30 @@
 		"vite": "^6.2.5"
 	},
 	"keywords": [
-		"svelte"
+		"svelte",
+		"fade",
+		"scroll",
+		"animation",
+		"transition",
+		"scrolling",
+		"scrolling animation",
+		"scrolling transition",
+		"scrolling fade",
+		"scrolling fade animation",
+		"scrolling fade transition",
+		"scrolling fade effect",
+		"scrolling fade effect animation",
+		"scrolling fade effect transition",
+		"scrolling fade effect svelte"
 	],
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Chrilleweb/svelte-fade-scroll.git"
 	}
 }
