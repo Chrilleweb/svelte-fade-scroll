@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fadeOnScroll } from "$lib/animation.js";
+	import { fadeOnScroll } from '$lib/animation.js';
 </script>
 
 <div

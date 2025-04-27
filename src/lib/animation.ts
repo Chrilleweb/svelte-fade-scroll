@@ -6,17 +6,8 @@ export interface FadeOnScrollOptions {
 	once?: boolean;
 }
 
-export function fadeOnScroll(
-	node: HTMLElement,
-	options: FadeOnScrollOptions = {}
-) {
-	const {
-		threshold = 0.1,
-		delay = 0,
-		duration = 700,
-		easing = 'ease',
-		once = false
-	} = options;
+export function fadeOnScroll(node: HTMLElement, options: FadeOnScrollOptions = {}) {
+	const { threshold = 0.1, delay = 0, duration = 700, easing = 'ease', once = false } = options;
 
 	// Set initial styles
 	node.style.opacity = '0';
