@@ -18,7 +18,23 @@ Lightweight, dependency-free, and perfect for modern frontend apps, portfolios, 
 npm install svelte-fade-scroll
 ```
 
-## Fade elements on scroll
+## 🚀 Quick usage (with default settings)
+
+You don't need to define any options — it just works!
+
+```js
+<script lang="ts">
+	import { fadeOnScroll } from 'svelte-fade-scroll';
+</script>
+
+<div use:fadeOnScroll>
+	This element will fade in when scrolled into view
+</div>
+
+<h1 use:fadeOnScroll> This element will do the same ! </h1>
+```
+
+## ✏️ Customize fade behavior yourself
 
 ```js
 <script lang="ts">
