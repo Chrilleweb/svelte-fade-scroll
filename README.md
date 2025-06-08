@@ -24,7 +24,7 @@ You don't need to define any options — it just works!
 
 ```js
 <script lang="ts">
-	import { fadeOnScroll } from 'svelte-fade-scroll';
+        import { fadeOnScroll } from 'svelte-fade-scroll';
 </script>
 
 <div use:fadeOnScroll>
@@ -50,7 +50,19 @@ You don't need to define any options — it just works!
 		once: true
 	}}
 >
-	Fade in once with 1s smooth ease-in-out
+        Fade in once with 1s smooth ease-in-out
+</div>
+```
+
+### Using a scroll container and custom classes
+
+```js
+<script lang="ts">
+       import { fadeOnScroll } from 'svelte-fade-scroll';
+</script>
+
+<div class="item" use:fadeOnScroll={{ root: document.getElementById('list'), rootMargin: '0px 0px -20% 0px', classes: ['visible'] }}>
+       Fades in when 20% before the element enters the container
 </div>
 ```
 
@@ -58,11 +70,14 @@ You don't need to define any options — it just works!
 
 | Option    | Type    | Default | Description |
 |:----------|:--------|:--------|:------------|
-| threshold | number  | 0.1     | How much of the element should be visible before fade-in starts |
-| delay     | number  | 0       | Delay before fade-in starts (in ms) |
-| duration  | number  | 700     | Duration of fade animation (in ms) |
-| easing    | string  | "ease"  | CSS easing function for the fade |
-| once      | boolean | false   | If true, fade happens only once and does not fade out when scrolling away |
+| threshold  | number   | 0.1     | How much of the element should be visible before fade-in starts |
+| delay      | number   | 0       | Delay before fade-in starts (in ms) |
+| duration   | number   | 700     | Duration of fade animation (in ms) |
+| easing     | string   | "ease"  | CSS easing function for the fade |
+| once       | boolean  | false   | If true, fade happens only once and does not fade out when scrolling away |
+| root       | Element? | `null`  | Scroll container to observe (defaults to viewport) |
+| rootMargin | string   | "0px"   | Margin around the root for IntersectionObserver |
+| classes    | string[] | `[]`    | Extra CSS classes toggled when the element is visible |
 
 ## 🛠 License
 MIT
